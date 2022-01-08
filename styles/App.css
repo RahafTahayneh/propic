@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(./Components.css);
+@import url(./Loader.css);
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Epilogue", sans-serif;
+}
+.epilogue * {
+  font-family: "Epilogue", sans-serif !important;
+}
+*:focus {
+  outline: none !important;
 }

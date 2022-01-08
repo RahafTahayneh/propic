@@ -11,7 +11,12 @@ import "../styles/App.css";
 
 const clerkFrontendAPI = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 
-const publicPages = ["/", "/sign-in/[[...index]]", "/sign-up/[[...index]]"];
+const publicPages = [
+  "/",
+  "/app",
+  "/sign-in/[[...index]]",
+  "/sign-up/[[...index]]",
+];
 
 const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
