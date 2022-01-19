@@ -1,4 +1,4 @@
-import {useCallback, useEffect, useState} from "react";
+import { useCallback, useEffect, useState } from "react";
 import html2canvas from "html2canvas";
 import axios from "axios";
 import { toast } from "react-hot-toast";
@@ -48,10 +48,9 @@ const Editor = ({ data, setData, children, Code }) => {
   };
 
   const addInnerHtml = useCallback(() => {
-    coverImage?.innerHTML = document.getElementById(
+    coverImage.innerHTML = document.getElementById(
       "cover_image_preview"
     )?.innerHTML;
-    console.log(coverImage?.innerHTML)
   }, [coverImage?.innerHTML]);
 
   const getShareImage = async () => {
@@ -67,7 +66,7 @@ const Editor = ({ data, setData, children, Code }) => {
     const formData = new FormData();
     formData.append("image", base64Image);
     formData.append("name", fileName);
-    formData.append("key", process.env.NEXT_PUBLIC_IMGBB_STORAGE_KEY)
+    formData.append("key", process.env.NEXT_PUBLIC_IMGBB_STORAGE_KEY);
 
     const upload = axios
       .post("https://api.imgbb.com/1/upload", formData)
@@ -105,12 +104,12 @@ const Editor = ({ data, setData, children, Code }) => {
     addInnerHtml();
 
     const downloadImage = html2canvas(coverImage, {
-      useCORS: true
+      useCORS: true,
     }).then((canvas) => {
       const a = document.createElement("a");
-      a.href = canvas.toDataURL("image/jpg")
-      a.download = fileName + "jpg"
-      a.click()
+      a.href = canvas.toDataURL("image/jpg");
+      a.download = fileName + "jpg";
+      a.click();
     });
 
     toast.promise(downloadImage, {
@@ -124,32 +123,36 @@ const Editor = ({ data, setData, children, Code }) => {
     addInnerHtml();
 
     html2canvas(coverImage, {
-      useCORS: true
+      useCORS: true,
     }).then((canvas) => {
       const image = canvas.toDataURL("image/png");
       const svgImg = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "image"
-      )
+      );
 
-      svgImg.setAttribute("height", "")
-      svgImg.setAttribute("width", "")
-      svgImg.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", image)
+      svgImg.setAttribute("height", "");
+      svgImg.setAttribute("width", "");
+      svgImg.setAttributeNS(
+        "http://www.w3.org/1999/xlink",
+        "xlink:href",
+        image
+      );
 
-      document.getElementById("mySvg").appendChild(svgImg)
+      document.getElementById("mySvg").appendChild(svgImg);
 
       const svgDataURL = (svg) => {
         const svgAsXML = new XMLSerializer().serializeToString(svg);
-        return "data:image/svg+xml"
-      }
+        return "data:image/svg+xml";
+      };
 
       const a = document.createElement("a");
-      a.href = svgDataURL(document.getElementById("mySvg"))
+      a.href = svgDataURL(document.getElementById("mySvg"));
       a.download = fileName + ".svg";
       a.click();
 
-      toast.success(`Saved ${fileName}.svg`)
-    })
+      toast.success(`Saved ${fileName}.svg`);
+    });
   };
 
   useEffect(() => {
