@@ -47,7 +47,7 @@ const Index = () => {
                   target="_blank"
                 >
                   <button className="inline-flex items-center h-10 px-8 py-6 text-gray-50 transition-colors duration-150 bg-green-700 rounded-lg focus:shadow-outline hover:bg-green-800 group-hover:text-white">
-                    <span>{`${starCount || 112} Stars`}</span>
+                    <span>{`${starCount || 73} Stars`}</span>
                     <FiGithub className="text-xl ml-2" />
                   </button>
                 </a>

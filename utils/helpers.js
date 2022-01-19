@@ -18,13 +18,13 @@ export const getTemplate = () => {
     },
     background: {
       type: "gradient",
-      color1: "#FF00CC",
-      color2: "#333399",
+      color1: "#276955",
+      color2: "#6ba794",
       direction: 105,
     },
     icon: {
       name: "react",
-      color: "#4A90E2",
+      color: "#46685f",
       fontSize: 125,
     },
   };

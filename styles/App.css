@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css);
+@import url(./Fonts.css);
 @import url(./Components.css);
 @import url(./Loader.css);
+@import url(./SignIn.css);
 
 * {
   margin: 0;
@@ -12,4 +16,93 @@
 }
 *:focus {
   outline: none !important;
+}
+.bottom-0 { bottom: 0; }
+
+.twitter-icon {
+  background-color: #0F84B425;
+  color: #0F84B4;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #276955 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #276955 !important;
+}
+
+.upload {
+  padding: 0 !important;
+  border-radius: 8px !important;
+  border: solid 2px #276955 !important;
+
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.logo {
+  height: 28px;
+}
+
+.label {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: gray;
+}
+
+.color {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.tab {
+  padding: 8px
+}
+
+.button {
+  background-color: white !important;
+  margin-top: 10px !important;
+  padding: 4px;
+}
+
+.image {
+  height: 85px;
+  width: 85px;
+}
+
+.img-container {
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.custom-file-input {
+  color: transparent;
+  width: 100%;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Upload Image 🚀";
+  color: #222;
+  width: 100%;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.desc {
+  text-align: center;
 }

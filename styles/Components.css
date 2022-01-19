@@ -20,3 +20,36 @@
 .resizerComp:hover .resizer {
     display: block !important;
 }
+
+.cover_image {
+    width: 1200px;
+    height: 630px;
+}
+
+.overlay {
+    height: 630px;
+    width: 1200px;
+    z-index: -1;
+}
+
+#leftBar {
+    transition: 0.5s !important;
+}
+
+.MuiButton-root {
+    color: inherit;
+}
+
+ul.MuiList-root.MuiMenu-list.MuiList-padding {
+    display: flex;
+    flex-direction: column;
+}
+ul.MuiList-root.MuiMenu-list.MuiList-padding li {
+    padding: 5px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.menu ul.MuiList-root.MuiMenu-list.MuiList-padding li {
+    padding-left: 0px;
+    padding: 0px;
+}

@@ -1,10 +1,10 @@
-import { Button } from "@mui/material";
+import { Button } from "@material-ui/core";
 
-export const Btn = ({ children, className, onClick, href }) => {
+export const Btn = ({ children, className, onClick }) => {
   return (
     <Button
-      className={`cursor-pointer ${className} overflow-hidden !rounded-none !lowercase !p-0 !m-0 !min-w-0 !min-h-0`}
-      onClick={() => window.open(href, "_blank")}
+      className={`cursor-pointer overflow-hidden !rounded-none !lowercase !m-0 !min-w-0 !min-h-0 ${className}`}
+      onClick={onClick}
     >
       {children}
     </Button>

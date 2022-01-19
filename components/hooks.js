@@ -21,10 +21,6 @@ const useComponents = () => {
       name: "images",
       icon: <BiImageAdd className="text-xl lg:text-2xl xl:text-2xl mb-[3px]" />,
     },
-    {
-      name: "saved",
-      icon: <FiFolder className="text-lg lg:text-xl xl:text-xl mb-1" />,
-    },
   ];
 
   return {

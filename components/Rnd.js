@@ -36,10 +36,6 @@ const Component = ({ children, width, x, y }) => {
           !isEditing && "hidden"
         }`}
       >
-        <div className="absolute top-[-7.5px] left-[-7.5px] rounded-full h-[15px] w-[15px] bg-white border-[3px] border-[#4286f4] overflow-visible" />
-        <div className="absolute top-[-7.5px] right-[-7.5px] rounded-full h-[15px] w-[15px] bg-white border-[3px] border-[#4286f4]" />
-        <div className="absolute bottom-[-7.5px] left-[-7.5px] rounded-full h-[15px] w-[15px] bg-white border-[3px] border-[#4286f4]" />
-        <div className="absolute bottom-[-7.5px] right-[-7.5px] rounded-full h-[15px] w-[15px] bg-white border-[3px] border-[#4286f4]" />
         <div
           className="absolute right-0 top-[-50px] flex items-center justify-center p-2 px-3 z-10 rounded-md bg-red-500 hover:bg-red-700 cursor-pointer text-white"
           onClick={() => setIsHiding(true)}
