@@ -35,7 +35,7 @@ const UploadArea = ({ children, setChildren }) => {
         reader.result.slice(file.type === "image/png" ? 22 : 23)
       );
       formData.append("name", file.name);
-      formData.append("key", process.env.NEXT_PUBLIC_IMGBB_STORAGE_KEY);
+      formData.append("key", "0cee1de697c090857e32d089d3927560");
 
       const upload = axios
         .post("https://api.imgbb.com/1/upload", formData)

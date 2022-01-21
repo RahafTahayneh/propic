@@ -12,7 +12,7 @@ const ImageArea = ({ children, setChildren }) => {
   const loader = useRef(null);
 
   useEffect(() => {
-    const client_id = process.env.NEXT_PUBLIC_UNSPLASH_CLIENT_ID;
+    const client_id = "SmwpLEIr8MZGDGD3S4Ciy1FkkQ4Sb_7rMeVG3y6IgXg";
     const fetchUrl = `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${searchValue}&page=${page}&per_page=12`;
 
     fetch(fetchUrl)
