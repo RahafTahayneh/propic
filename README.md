@@ -80,7 +80,6 @@ You are all set! Open [localhost:3000](http://localhost:3000/) to see the app.
 ## 💻 Built with
 
 - [Next JS](https://nextjs.org/)
-- [Clerk](https://clerk.dev/): Complete User Authentication
 - [react-color](https://casesandberg.github.io/react-color/): for color pickers
 - [html2canvas](https://html2canvas.hertzen.com/): for export as PNG, JPG, SVG
 - [react-rnd](https://github.com/bokuweb/react-rnd): for draggable and resizable components
