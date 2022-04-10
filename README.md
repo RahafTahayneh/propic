@@ -5,7 +5,7 @@
 </p>
 <h1 align="center">ProPic✨️</h1>
 
-<p align="center"><img src="https://gifyu.com/image/SLKc4" alt="slickr gif" width="550" /></p>
+<p align="center"><img src="public/assets/propic-gif.gif" alt="slickr gif" width="550" /></p>
 
 <p align="center">
     <a href="https://propic-world.vercel.app/" target="blank">View Demo</a>
