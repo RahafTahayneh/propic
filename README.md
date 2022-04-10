@@ -58,10 +58,9 @@ cd propic
 ```
 
 3. Install dependencies
-
+4. 
 ```bash
 npm install
-``
 ```
 
 4. Run the app
