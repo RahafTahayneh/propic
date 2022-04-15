@@ -5,7 +5,7 @@
 </p>
 <h1 align="center">ProPic✨️</h1>
 
-<p align="center"><img src="public/assets/propic-gif.gif" alt="slickr gif" width="550" /></p>
+<p align="center"><img src="public/assets/propic-gif.gif" alt="Propic gif" width="550" /></p>
 
 <p align="center">
     <a href="https://propic-world.vercel.app/" target="blank">View Demo</a>
@@ -26,8 +26,6 @@ Try the App: [ProPic](https://propic-world.vercel.app/)
 ## 🧐 Features
 
 ProPic comes up with a whole bunch of amazing features to provide you the best experience, Here're some of our best features.
-
-> Supercharge your hashnode blog with slickr.
 
 - 💯 **Draggable, Resizable, Wrappable**
 - 🎩 **Upload your Images and use it**
